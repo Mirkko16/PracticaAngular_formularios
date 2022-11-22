@@ -7,29 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     
-    nombre = 'Nombre...';
-    apellido='Apellido...';
-    direccion='Direccion...';
-    telefono='Tel...';
-
-    getNombre(nombre:string)
-    {
-      return nombre;
-    }
-    getApellido(apellido:string)
-    {
-      return apellido;
-    }
-    getDireccion(direccion:string)
-    {
-      return  direccion;
-    }
-    getTelefono(telefono:string)
-    {
-      return telefono;
-    }
-
-    
+    nombre:string=""; 
+    apellido:string="";
+    direccion:string="";
+    telefono:string="";
 
 
 }

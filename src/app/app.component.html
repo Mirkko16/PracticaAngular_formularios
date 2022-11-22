@@ -1,37 +1,22 @@
-<div class="container mt-4">
+<div class="container mt-4">    
   <div class="row">
-    <h1>Toma de datos...</h1>
     <br>
-    <h2>Nombre:</h2>
-    <br>
-    <input type="text" class="form-control" placeholder ="nombre">
-    <h2>Apellido:</h2>
-    <br>
-    <input type="text" class="form-control" placeholder ="apellido">
-    <h2>Direccion:</h2>
-    <br>
-    <input type="text" class="form-control" placeholder ="direccion">
-    <h2>Telefono:</h2>
-    <br>
-    <input type="text" class="form-control" placeholder ="telefono">
-  </div>  
-  <div class="row">
-    <h2>Muestreo de datos...</h2>
-    
-    <br>
-    <h2>Nombre:</h2>
-    <br>
-    <input type="text" class="form-control" [placeholder]="nombre">
-    <h2>Apellido:</h2>
-    <br>
-    <input type="text" class="form-control" [placeholder]="apellido">
-    <h2>Direccion:</h2>
-    <br>
-    <input type="text" class="form-control" [placeholder]="direccion">
-    <h2>Telefono:</h2>
-    <br>
-    <input type="text" class="form-control" [placeholder]="telefono">
-  </div>
-  <br>
-  <button type="button"  class="btn btn-warning btn-xs">Mostrar datos</button>
+    <div class="muestreo">
+      <h2>Muestreo de datos...</h2>
+    </div>
+    <div>
+      <input type="text" class="form-control" placeholder ="escriba su nombre" [(ngModel)]="nombre">
+      <h3>Nombre: {{nombre}}</h3>
+      <br>
+      <input type="text" class="form-control" placeholder ="escriba su apellido" [(ngModel)]="apellido">
+      <h3>Apellido: {{apellido}}</h3>
+      <br>
+      <input type="text" class="form-control" placeholder ="escriba su direccion" [(ngModel)]="direccion">
+      <h3>Direccion: {{direccion}}</h3>
+      <br>
+      <input type="text" class="form-control" placeholder ="escriba su telefono" [(ngModel)]="telefono">
+      <h3>Telefono: {{telefono}}</h3>
+      <br>
+    </div>
+  
 </div>
